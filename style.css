@@ -1,0 +1,513 @@
+/*-------------------Home page -----------*/
+*{
+    margin:0;
+    padding:0;
+     
+    font-family: "Montserrat", sans-serif;
+
+}
+
+.header{
+
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0,0,0,0.32),rgb(0,0,0,0.32)),url(image/backgorund.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+nav{
+    width: 95%;
+    margin: 10px;
+    margin-top: 0px;
+    height: 45px;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+   
+   
+}
+
+
+.logo
+{
+    width: 180px;
+    cursor: pointer;
+}
+
+
+.nav-links li{
+    list-style: none;
+    font-size: large;
+    font-weight: 700;
+    display: inline-block;
+    margin: 10px 30px;  
+    cursor:pointer; 
+    
+}
+
+
+
+.nav-links li a{
+    text-decoration: none;
+    color: #000;
+    opacity: 0.75;
+ 
+}
+.nav-links li a:hover{
+    color: #f1eaea;
+    opacity: 1;
+}
+
+
+.r-button
+{
+    background: #fff;
+    color:#000;
+    padding: 8px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 14px;
+    float: left;
+    transition: 0.5s;
+
+}
+
+.r-button:hover{
+    transform: translateY(-2px);
+}
+
+.container{
+    padding: 0 3%;
+
+}
+.header h1{
+    font-size: 4vw;
+    font-weight: 400;
+    color:#fff;
+    text-align: center;
+    padding-top:15%;
+   font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.header h1:hover{
+    background: linear-gradient(42deg, #6d82e7 15%,#fc87f4 46%, #cda354 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    
+ 
+}
+.search-bar{
+    background: #fff;
+    width: 50%;
+    margin: 30px auto;
+    padding:6px 10px 6px 30px;
+    border-radius: 50px;
+    
+}
+
+.search-bar form{
+    
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.search-bar form input{
+
+    width: 650px;
+    height: 25px;
+    border: 0;
+    outline: none;
+}
+
+.search-bar form button img{
+    width: 20px;
+    height: 20px;
+    border: white;
+    outline: none;
+    background: #fff;
+    cursor: pointer;
+
+}
+/*...............................notice......................... */
+
+.Notice{
+    background:rgb(212, 211, 209);
+    display:inline-flex;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    
+}
+
+
+
+.Notice h1{
+    margin: 10px;
+    margin-left: 20px;
+    font-size: large;
+    width: 180px;
+}
+
+.Notice marquee{
+    margin: 10px;
+}
+
+/* ........................ next tab ....................*/
+
+.trend{
+    background: #B0C4DEE0;
+    width: 100%;
+    height:1000px;
+    border-radius: 5px;
+    position: sticky;
+
+}
+
+.sub-title{
+    color: #333;
+    margin: 20px 10px 40px;
+    font-size: 2.2vw;
+    font-weight: 100;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.sub-title h2{
+    margin: 30px;
+}
+
+.trending{
+    margin-left: 30px;
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px, 400px));
+    grid-gap: 30px;
+    
+}
+.trending div img{
+    margin: 10px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.trending div label{
+    font-weight: 600;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+/* .............Middle of web page .......*/
+
+.section{
+    background-color: #f4ebeb;
+    position: relative;
+    display: flex;
+    margin: 2px;
+    margin-right: 0;
+    justify-content: space-between;
+    padding:100px;
+    height: fit-content;
+}
+
+
+.section h1{
+    margin-top: 40px;
+    margin-left: 30px;
+    font-weight: 400;
+    color: #6d82e7;
+    
+}
+
+.section p{
+    padding: 15px;
+    margin-right: 20px;
+}
+
+.pic{
+
+    height: 270px;
+    width: 280px;
+    background-color: #fff;
+    border: 15px;
+    border-radius: 10px;
+
+}
+.pic img{
+    
+    margin:5px 5px 7px 7px;
+    height: 240px;
+    width: 240px;
+    border-radius: 10px;
+}
+
+
+/*--------- footer section --------*/
+
+.logo-footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.footer {
+    position: relative;
+    width: 92%;
+    background: #253c5e;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+  }
+  
+  .social-icon,
+  .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+  }
+  
+  .social-icon__item,
+  .menu__item {
+    list-style: none;
+  }
+  
+  .social-icon__link {
+    font-size: 2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+  }
+  .social-icon__link:hover {
+    transform: translateY(-10px);
+  }
+  
+  .menu__link {
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+    font-weight: 300;
+  }
+  
+  .menu__link:hover {
+    opacity: 1;
+  }
+  
+  .footer p {
+    color: #fff;
+    margin: 15px 0 10px 0;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  
+  /* --------- Explore page ---------*/
+
+  .active img{
+    color:#fff;
+    opacity: 1;
+  }
+
+.nav-explore{
+
+    width: 100%;
+    margin: 0px;
+    height: 100px;
+    padding: 0px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    background:  #2B2B2B;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.05) ;
+}
+
+.nav-explore .nav-links li a{
+
+    color: #fff;
+}
+.nav-explore .r-button{
+    background: #eaec6d;
+    margin-right: 10px;
+    transition: 0.5s;
+}
+
+.nav-explore .r-button:hover{
+    transform: translateY(-5px);
+}
+.container1{
+    height: 100vh;
+    box-sizing: border-box;
+}
+.ad-pic{
+    width: 100%;
+    
+   
+}
+
+.images{
+
+    margin: 30px;
+    margin-left: 80px;
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px, 600px));
+    grid: gap 5px;
+    
+    
+}
+.images div h1{
+    margin: 20px;
+    margin-left: 40px;
+    color: #cda354;
+
+}
+
+.images div img{
+    margin-left: 40px;
+    height: 400px;
+}
+
+.para
+{
+    margin: 50px;
+    margin-top: 40px;
+    
+}
+
+.para p{
+    margin-top: 100px;
+}
+
+
+/*------------- hotel booking -----------*/
+
+
+.banner-pic{
+    width: 1472px;
+}
+
+.listing{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f6f6f6;
+    margin-top: 50px;
+}
+
+listcontainer{
+    margin-top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.left-col{
+    flex-basis: 70%;
+    
+}
+
+.right-col{
+    flex-basis: 25%;
+
+}
+
+.left-col h1{
+    color: #333;
+    font-weight: 600;
+    margin: bottom 30px;
+}
+
+.house
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px 0;
+    border-top: 1px solid #ccc;
+
+
+}
+
+.house-img{
+    flex-basis: 40%;
+    margin-left:20px;
+}
+
+.house-info{
+    flex-basis: 58%;
+}
+
+.house-img img{
+    width: 350px;
+    border-radius: 15px;
+} 
+
+.house-info h3{
+    font-weight: 600;
+    color:#333;
+    font-size: 22px;
+    margin: 4px 0;
+} 
+
+.house-info i{
+    color: #ff5361;
+    font-size: 18px;
+    margin: 10px 1;
+}
+
+/* ------------------- Experience -------------*/
+
+.container2{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.images1{
+    margin: 30px;
+    margin-left: 80px;
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px, 600px));
+    grid: gap 5px;
+    border-width: 10px;
+    border-color: #000;
+    
+    
+}
+.images1 div h1{
+    margin: 20px;
+    margin-left: 30px;
+    color: #cda354;
+
+}
+.images1 div img{
+    margin-left: 40px;
+    height: 350px;
+    border-radius: 10px;
+}
+
+.images1 div h2{
+    margin: 20px;
+    margin-left:30px;
+    transition: 0.5s ease ;
+}
+
+.images1 div img:hover{
+    transform: scale(0.8);
+}
